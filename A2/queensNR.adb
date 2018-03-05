@@ -77,6 +77,7 @@ procedure queensNR is
 
 
     -- the back tracking algorithm for solving the N queens problem iteratively
+    -- reference: https://github.com/JohnHutchinson/Non-Recursive-N-Queen-Solution/blob/master/NQueenPuzzle.cpp
     procedure solve8Queens(board: in out game_board) is
 
 	more_solutions : boolean;
