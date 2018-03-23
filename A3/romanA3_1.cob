@@ -122,6 +122,10 @@ procedure division.
                     *> force uppercase
                     move function upper-case(user-input) to user-input 
 
+                    if string-length < 1
+                        display "Invalid input try again!"
+                    end-if
+
                     *> call our convert function
                     call "conv" using user-input, string-length
                 end-read
@@ -132,6 +136,11 @@ procedure division.
         else if file_found = 0
             *> force uppercase and call convert function
             move function upper-case(user-input) TO user-input 
+
+            if string-length < 1
+                display "Invalid input try again!"
+            end-if
+
             call "conv" using user-input, string-length
 
     end-perform.
