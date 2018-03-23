@@ -124,10 +124,12 @@ procedure division.
 
                     if string-length < 1
                         display "Invalid input try again!"
+                    else
+                        *> call our convert function
+                        call "conv" using user-input, string-length
                     end-if
 
-                    *> call our convert function
-                    call "conv" using user-input, string-length
+
                 end-read
             end-perform
             close roman-file
@@ -139,8 +141,8 @@ procedure division.
 
             if string-length < 1
                 display "Invalid input try again!"
+            else
+                call "conv" using user-input, string-length
             end-if
-
-            call "conv" using user-input, string-length
 
     end-perform.
