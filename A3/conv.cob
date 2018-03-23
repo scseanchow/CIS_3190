@@ -31,7 +31,7 @@ procedure division using user-input, string-length.
     *> reset our variables
     move 0 to sum1.
     move 1001 to prev.
-    move 0 to valid-roman
+    move 0 to valid-roman.
 
     *> for loop which iterates through every character of the string
     perform varying i from 1 by 1 until i is greater than string-length
